@@ -20,7 +20,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
     minlength: 8,
-    select: false, // Evita que se devuelva por defecto
+    select: false, 
   },
   role: {
     type: String,

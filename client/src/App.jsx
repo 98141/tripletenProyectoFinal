@@ -30,6 +30,10 @@ import ResetPasswordPage from "./pages/ResetPasswordPage";
 import ProductHistoryPage from "./pages/admin/products/AdminProductHistoryPage";
 import AdminProductEntryHistoryPage from "./pages/admin/products/AdminProductEntryHistoyPage";
 import CatalogoPage from "./pages/user/CatalogoPage";
+import OrigenNarinoPage from "./pages/user/cafe/OrigenNariñoPage";
+import { PanelaSandonaPage } from "./pages/user/panela/PanelaSandonaPage";
+import PanelaRecipesPage from "./pages/user/panela/RecetasPanelaPage";
+import TostionCafePage from "./pages/user/cafe/TostionCafePage";
 
 function App() {
   return (
@@ -53,6 +57,16 @@ function App() {
             <Route
               path="/reset-password/:token"
               element={<ResetPasswordPage />}
+            />
+            <Route path="/origen/cafe-narino" element={<OrigenNarinoPage />} />
+            <Route path="/origen/tostion" element={<TostionCafePage />} />
+            <Route
+              path="/origen/panela-sandona"
+              element={<PanelaSandonaPage />}
+            />
+                        <Route
+              path="/origen/recetas"
+              element={<PanelaRecipesPage />}
             />
             <Route path="/tienda" element={<CatalogoPage />} />
             <Route path="/categoria/:slug" element={<CatalogoPage />} />

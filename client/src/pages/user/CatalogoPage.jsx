@@ -23,7 +23,7 @@ export default function CatalogPage() {
   const urlCategory = useMemo(() => {
     // Soporta /categoria/:slug, /artesanias/:slug, /cafe/:slug, /panela/:slug
     const firstSeg = location.pathname.split("/").filter(Boolean)[0] || "";
-    if (["categoria", "artesanias", "cafe", "panela"].includes(firstSeg)) {
+    if (["categoria", "artesanias"].includes(firstSeg)) {
       return params.slug || null;
     }
     // fallback: ?category=slug

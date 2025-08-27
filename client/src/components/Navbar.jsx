@@ -27,83 +27,83 @@ const menuConfig = ({ role, hidePublic }) => {
     : [
         { label: "Inicio", to: "/", activeMatch: /^\/$/ },
         {
-            label: "Artesanías",
-            to: "/artesanias",
-            activeMatch: /^\/artesanias(\/|$)/,
-            children: [
-              {
-                label: "Hogar",
-                to: "/categoria/hogar",
-                activeMatch: /^\/categoria\/hogar(\/|$)/,
-              },
-              {
-                label: "Carteras",
-                to: "/categoria/carteras",
-                activeMatch: /^\/categoria\/carteras(\/|$)/,
-              },
-              {
-                label: "Sombreros",
-                to: "/categoria/sombreros",
-                activeMatch: /^\/categoria\/sombreros(\/|$)/,
-              },
-              {
-                label: "Manualidades",
-                to: "/categoria/manualidades",
-                activeMatch: /^\/categoria\/manualidades(\/|$)/,
-              },
-              {
-                label: "Letras",
-                to: "/categoria/letras",
-                activeMatch: /^\/categoria\/letras(\/|$)/,
-              },
-              {
-                label: "Aretes",
-                to: "/categoria/aretes",
-                activeMatch: /^\/categoria\/aretes(\/|$)/,
-              },
-            ],
-          },
-        {
-          label: "Café",
-          to: "/cafe",
-          activeMatch: /^\/cafe(\/|$)/,
+          label: "Artesanías",
+          to: "/artesanias",
+          activeMatch: /^\/artesanias(\/|$)/,
           children: [
             {
+              label: "Hogar",
+              to: "/categoria/hogar",
+              activeMatch: /^\/categoria\/hogar(\/|$)/,
+            },
+            {
+              label: "Carteras",
+              to: "/categoria/carteras",
+              activeMatch: /^\/categoria\/carteras(\/|$)/,
+            },
+            {
+              label: "Sombreros",
+              to: "/categoria/sombreros",
+              activeMatch: /^\/categoria\/sombreros(\/|$)/,
+            },
+            {
+              label: "Manualidades",
+              to: "/categoria/manualidades",
+              activeMatch: /^\/categoria\/manualidades(\/|$)/,
+            },
+            {
+              label: "Letras",
+              to: "/categoria/letras",
+              activeMatch: /^\/categoria\/letras(\/|$)/,
+            },
+            {
+              label: "Aretes",
+              to: "/categoria/aretes",
+              activeMatch: /^\/categoria\/aretes(\/|$)/,
+            },
+          ],
+        },
+        {
+          label: "Café",
+          to: "/origen/cafe-narino",
+          activeMatch: /^\/origen\/cafe-narino(\/|$)/,
+          children: [
+            {
+              label: "Productos",
+              to: "/categoria/productoCafe",
+              activeMatch: /^\/categoria\/productoCafe(\/|$)/,
+            },
+            {
               label: "Origen Nariño",
-              to: "/cafe/narino",
-              activeMatch: /^\/cafe\/narino(\/|$)/,
+              to: "/origen/cafe-narino",
+              activeMatch: /^\/origen\/cafe-narino(\/|$)/,
             },
             {
               label: "Tostiones",
-              to: "/cafe/tostiones",
-              activeMatch: /^\/cafe\/tostiones(\/|$)/,
-            },
-            {
-              label: "Métodos",
-              to: "/cafe/metodos",
-              activeMatch: /^\/cafe\/metodos(\/|$)/,
+              to: "/origen/tostion",
+              activeMatch: /^\/origen\/tostion(\/|$)/,
             },
           ],
         },
         {
           label: "Panela",
-          to: "/panela",
-          activeMatch: /^\/panela(\/|$)/,
+          to: "/origen/panela-sandona",
+          activeMatch: /^\/origen\/panela-sandona(\/|$)/,
           children: [
             {
-              label: "Trapiche",
-              to: "/panela/tradicion",
-              activeMatch: /^\/panela\/tradicion(\/|$)/,
+              label: "Productos",
+              to: "/categoria/productoPanela",
+              activeMatch: /^\/categoria\/productoPanela(\/|$)/,
             },
             {
-              label: "Presentaciones",
-              to: "/panela/presentaciones",
-              activeMatch: /^\/panela\/presentaciones(\/|$)/,
+              label: "Trapiche",
+              to: "/origen/panela-sandona#trapiche",
+              activeMatch: /^\/origen\/panela-sandona(\/|$)/,
             },
             {
               label: "Recetas",
-              to: "/panela/recetas",
-              activeMatch: /^\/panela\/recetas(\/|$)/,
+              to: "/origen/recetas#recetas",
+              activeMatch: /^\/origen\/recetas(\/|$)/,
             },
           ],
         },
@@ -152,52 +152,47 @@ const menuConfig = ({ role, hidePublic }) => {
           },
           {
             label: "Café",
-            to: "/cafe",
-            activeMatch: /^\/cafe(\/|$)/,
+            to: "/origen/cafe-narino",
+            activeMatch: /^\/origen\/cafe-narino(\/|$)/,
             children: [
               {
+                label: "Productos",
+                to: "/categoria/productoCafe",
+                activeMatch: /^\/categoria\/productoCafe(\/|$)/,
+              },
+              {
                 label: "Origen Nariño",
-                to: "/",
-                activeMatch: /^\/cafe\/narino(\/|$)/,
+                to: "/origen/cafe-narino",
+                activeMatch: /^\/origen\/cafe-narino(\/|$)/,
               },
               {
                 label: "Tostiones",
-                to: "/",
-                activeMatch: /^\/cafe\/tostiones(\/|$)/,
-              },
-              {
-                label: "Métodos",
-                to: "/",
-                activeMatch: /^\/cafe\/metodos(\/|$)/,
+                to: "/origen/tostion",
+                activeMatch: /^\/origen\/tostion(\/|$)/,
               },
             ],
           },
           {
             label: "Panela",
-            to: "/panela",
-            activeMatch: /^\/panela(\/|$)/,
+            to: "/origen/panela-sandona",
+            activeMatch: /^\/origen\/panela-sandona(\/|$)/,
             children: [
               {
-                label: "Trapiche",
-                to: "/",
-                activeMatch: /^\/panela\/tradicion(\/|$)/,
+                label: "Productos",
+                to: "/categoria/productoPanela",
+                activeMatch: /^\/categoria\/productoPanela(\/|$)/,
               },
               {
-                label: "Presentaciones",
-                to: "/",
-                activeMatch: /^\/panela\/presentaciones(\/|$)/,
+                label: "Trapiche",
+                to: "/origen/panela-sandona#trapiche",
+                activeMatch: /^\/origen\/panela-sandona(\/|$)/,
               },
               {
                 label: "Recetas",
-                to: "/",
-                activeMatch: /^\/panela\/recetas(\/|$)/,
+                to: "/origen/recetas#recetas",
+                activeMatch: /^\/origen\/recetas(\/|$)/,
               },
             ],
-          },
-          {
-            label: "Mis pedidos",
-            to: "/my-orders",
-            activeMatch: /^\/my-orders(\/|$)/,
           },
         ]
       : [];
@@ -278,7 +273,7 @@ const Navbar = () => {
   const navRef = useRef(null);
 
   const isAdminRoute = location.pathname.startsWith("/admin");
-  const hidePublic = isAdminRoute || Boolean(user);
+  const hidePublic = isAdminRoute || user?.role === "user";
   const isCustomer = user?.role === "user";
 
   const capitalizeInitials = (name) =>
@@ -348,7 +343,7 @@ const Navbar = () => {
               }
               className="brand"
             >
-              <span className="brand-name">Artesanías Paja Toquilla</span>
+              <span className="brand-name">Tejiendo Raices</span>
             </Link>
           </div>
 

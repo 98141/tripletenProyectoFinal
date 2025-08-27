@@ -85,10 +85,10 @@ const Footer = () => {
                 <Link to="/artesanias/sombreros">Sombreros</Link>
               </li>
               <li>
-                <Link to="/artesanias/accesorios">Carteras</Link>
+                <Link to="/artesanias/carteras">Carteras</Link>
               </li>
               <li>
-                <Link to="/artesanias/colecciones">Canastas</Link>
+                <Link to="/artesanias/hogar">Hogar</Link>
               </li>
               <li>
                 <Link to="/artesanias/accesorios">Accesorios</Link>
