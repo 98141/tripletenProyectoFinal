@@ -161,7 +161,7 @@ export default function PanelaRecipesPage() {
           <p className="kicker">Panela</p>
           <h1 id="recipes-title" className="hero__title">Recetas con Panela</h1>
           <p className="hero__subtitle">
-            Preparaciones sencillas y auténticas. Esta página es informativa (sin llamadas a backend) y lista para crecer.
+            Preparaciones sencillas y auténticas. 
           </p>
           <nav className="hero__nav" aria-label="Secciones">
             <a href="#bebidas" className="hero__link">Bebidas</a>
