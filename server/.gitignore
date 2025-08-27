@@ -1,0 +1,14 @@
+# Node modules
+node_modules/
+
+# Variables de entorno
+.env
+
+# Archivos de log
+*.log
+
+# Cache
+.cache
+
+# Imagenes
+uploads/
