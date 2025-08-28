@@ -33,7 +33,7 @@ app.use(morgan(NODE_ENV === "production" ? "combined" : "dev"));
 
 // --- CORS (exacto) ---
 const corsOptions = {
-  origin: FRONTEND_ORIGIN, // exacto dominio del frontend
+  origin: FRONTEND_ORIGIN,
   credentials: true,
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
